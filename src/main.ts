@@ -11,6 +11,7 @@ import {DemoMaterialModule} from './app/material-module';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 
 import {CdkDragDropSortingExample} from './app/cdk-drag-drop-sorting-example';
+import {DragDropContentComponent} from './app/drag-drop-content/drag-drop-content-component';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -26,7 +27,7 @@ import {CdkDragDropSortingExample} from './app/cdk-drag-drop-sorting-example';
     ReactiveFormsModule,
   ],
   entryComponents: [CdkDragDropSortingExample],
-  declarations: [CdkDragDropSortingExample],
+  declarations: [CdkDragDropSortingExample, DragDropContentComponent],
   bootstrap: [CdkDragDropSortingExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
